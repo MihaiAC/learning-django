@@ -1,0 +1,7 @@
+name: django
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - anaconda::django
+  - anaconda::pillow

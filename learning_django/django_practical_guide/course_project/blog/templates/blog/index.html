@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+    Blog's blog.
+{% endblock %}
+
+{% block css_files %}
+    <link rel="stylesheet" href="{% static "blog/post.css" %}">
+    <link rel="stylesheet" href="{% static "blog/index.css" %}">
+{% endblock %} 
+
+
+
+{% block content %}
+
+Welcome to yet another blog app.
+<section id="welcome">
+    <header>
+        <img src="{% static "blog/images/maxo.jpg" %}" alt="Author of this blog." />
+        <h2> Blog's blog </j2>
+    </header>
+    <p>Hi, my name is Blog and this is my blog.</p>
+</section>
+
+<section id="latest-posts">
+    <h2>Latest posts</h2>
+    <ul>
+        {% for post in posts %}
+            {% include "blog/includes/post.html" %}
+        {% endfor %}
+    </ul>
+</section>
+<section id="about">
+    <h2>What we do</h2>
+    <p>{% lorem 3 b random %}</p>
+</section>
+{% endblock %}
