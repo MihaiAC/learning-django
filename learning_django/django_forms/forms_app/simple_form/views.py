@@ -5,7 +5,7 @@ from .models import Person
 from .forms import SimpleForm
 
 
-class PersonCreateView(CreateView):
+class SimpleFormView(CreateView):
     model = Person
     form_class = SimpleForm
     template_name = "simple_form.html"
