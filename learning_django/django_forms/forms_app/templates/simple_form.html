@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,14 +7,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="{% static 'dist/styles.css' %}">
 </head>
 
 <body>
-    <form method="post">
-        {% csrf_token %}
-        {{ form.as_p }}
-        <button type="submit">Save</button>
-    </form>
+    <div class="min-h-screen flex justify-center items-center bg-gray-600">
+        <form method="post" class="flex flex-col p-4 space-y-2 justify-center border-2 border-white shadow-md rounded-lg">
+            {% csrf_token %}
+
+            <label for="{{ form.first_name.id_for_label }}" class="block text-white">Username</label>
+            <input type="text" name="{{ form.first_name.name }}" id="{{ form.first_name.id_for_label }}" class="border rounded px-4 py-2 w-full">
+            {{ form.first_name.errors }}
+
+            <label for="{{ form.last_name.id_for_label }}" class="block text-white">Password</label>
+            <input type="text" name="{{ form.last_name.name }}" id="{{ form.last_name.id_for_label }}" class="border rounded px-4 py-2 w-full">
+            {{ form.last_name.errors }}
+            <button type="submit" class="bg-gray-800 p-1 rounded-md shadow-md text-white mt-4 mx-auto hover:bg-gray-700">Save</button>
+        </form>
+    </div>
 </body>
 
 </html>
