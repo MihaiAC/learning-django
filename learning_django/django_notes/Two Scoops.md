@@ -111,6 +111,9 @@ Mixins to the left, base views to the right.
 GCBVs = Generic CBV -> complex inheritance chains
 When using LoginRequiredMixin -> if dispatch is overridden, call super() immediately.
 
+### Forms
+Can use form validation for general incoming data validation. (neat trick!)
+
 
 
 
