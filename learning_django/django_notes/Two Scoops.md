@@ -114,6 +114,16 @@ When using LoginRequiredMixin -> if dispatch is overridden, call super() immedia
 ### Forms
 Can use form validation for general incoming data validation. (neat trick!)
 
+### Other tips and tricks
+Django admin - move it from the default address, can leave honeypot at /admin
+https://djangopackages.org/
+User uploaded files - careful and extensive validation.
+Vulnerability reporting page
+Never display sequential primary keys.
+Password hashers?
+Log management - https://www.loggly.com/ 
+
+
 
 
 
