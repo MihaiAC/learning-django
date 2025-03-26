@@ -9,5 +9,4 @@ Interactive shell: `python manage.py shell` - so far used to populate a dummy ta
 
 Superuser: `python manage.py createsuperuser`
 
-WIndows shell shrink curr dir path: `prompt = $G`
-
+Windows shell shrink curr dir path: `prompt = $G`
