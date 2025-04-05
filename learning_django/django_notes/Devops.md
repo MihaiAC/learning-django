@@ -7,6 +7,7 @@ False positives are a potential issue.
 **Vulnerability scanners** (was thinking of dependency vuln scanning): 
 - https://snyk.io/ - has free plan, 100 scans per month.
 - https://docs.github.com/en/code-security/getting-started/dependabot-quickstart-guide - GitHub's Dependabot
+- If you are suspicious about a package and what connections it makes, run CWE-020-ExternalAPIs with CodeQL https://github.com/github/codeql/blob/main/python/ql/src/Security/CWE-020-ExternalAPIs/UntrustedDataToExternalAPI.ql
 Should find open source alternative.
 For JS, including npm audit in CI/CD should be ok for small projects.
 Could add further vuln DBs to npm audit?
