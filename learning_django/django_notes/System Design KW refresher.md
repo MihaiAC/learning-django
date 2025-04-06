@@ -1,0 +1,17 @@
+Keywords/concepts to serve as reminders.
+- Horizontal vs Vertical Scaling
+- Cold/warm standby
+- MongoDB vs Cassandra sharding approaches ("master", replica set, mongos, config servers vs ring, eventual consistency, decentralized)
+- Denormalizing
+- Data lakes - (creating schema Glue, querying Athena/Redshift)
+- ACID (Atomicity, Consistency, Isolation, Durability)
+- CAP theorem - Availability, Consistency, Partition-Tolerance - choose two - which two are the most important for the given use case?
+- Caching - expiration policy (LRU, LFU, FIFO), hotspots, cold-start
+- Caching techs: Redis, ElastiCache, memcached, ncache, ehcache
+- CDNs for static content, expensive
+- AZs, regions redundancy
+- Distributed storage
+- HDFS
+- Message queues - (producers - queue - consumers)
+- Spark - YARN, Spark streaming with Kinesis/Kafka; Streaming, SQL, MLLib, Core.
+- 
